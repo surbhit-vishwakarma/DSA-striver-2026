@@ -1,0 +1,19 @@
+import java.util.*;
+class Solution {
+    public static int largest(int[] arr) {
+        // code here
+        // int num = Arrays.stream(arr).boxed().max((a,b)-> a-b).get();
+        // return num;
+        
+        
+        int maxNum = Integer.MIN_VALUE;
+        
+        for(int num : arr){
+            if(maxNum < num){
+                maxNum = num;
+            }
+        }
+        
+        return maxNum;
+    }
+}
